@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Printful Locations</string>
+    <string name="map_api_key">Add your google map key here</string>
+    <string name="ok">OK</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+    <string name="proceed">PROCEED</string>
+    <string name="check_internet">Please check internet connection</string>
+    <string name="note_enter_valid_email_in_below_field_this_email_will_be_used_to_fetch_user_location_details_from_server">Note: Enter valid email in below field. This email will be used to fetch user location details from server.</string>
+</resources>
