@@ -3,43 +3,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_infowingow"
-    android:orientation="horizontal"
-    android:paddingStart="@dimen/_2sdp"
-    android:paddingLeft="@dimen/_2sdp"
-    android:paddingTop="@dimen/_2sdp"
-    android:paddingEnd="@dimen/_10sdp"
-    android:paddingRight="@dimen/_10sdp">
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/ivProfile"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp" />
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_2sdp"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:background="@drawable/bg_infowingow">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvName"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp" />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/_13ssp"
-            android:textStyle="bold"
-            tools:text="Jack Sparrow" />
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tvAddress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorBlackLight"
-            android:textSize="@dimen/_10ssp"
-            tools:text="In Black Pearl sadsds \n dsdsd dsds ds \n dsdsd dsds dsdsd dsds Latvia" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                tools:text="Jack Sparrow" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlackLight"
+                android:textSize="@dimen/_10ssp"
+                tools:text="In Black Pearl sadsds \n dsdsd dsds ds \n dsdsd dsds dsdsd dsds Latvia" />
+        </LinearLayout>
     </LinearLayout>
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:src="@drawable/ic_play_arrow"
+        android:tint="@color/colorAccent"
+        android:rotation="90"/>
 </LinearLayout>
