@@ -30,7 +30,7 @@ class EmailActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
             R.id.btnProceed -> {
 
-                var strEmail = binding.etEmail.text.toString()
+                var strEmail = binding.etEmail.text.toString().trim()
                 if (!strEmail.isNullOrEmpty() &&
                     Patterns.EMAIL_ADDRESS.matcher(strEmail).matches()
                 ) {
