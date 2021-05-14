@@ -2,7 +2,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <stroke
         android:width="@dimen/_2sdp"
-        android:color="@color/colorAccent" />
+        android:color="@color/colorPrimary" />
     <corners
         android:bottomLeftRadius="@dimen/_8sdp"
         android:bottomRightRadius="@dimen/_8sdp"
@@ -10,7 +10,7 @@
         android:topRightRadius="@dimen/_1sdp" />
     <gradient
         android:centerColor="@color/colorWhite"
-        android:endColor="@color/colorPrimaryLightTrans"
+        android:endColor="@color/colorPrimaryLight"
         android:startColor="@color/colorWhite"
         android:angle="270"
         />

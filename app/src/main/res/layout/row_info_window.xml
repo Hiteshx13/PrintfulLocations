@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -9,51 +10,56 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingStart="@dimen/_2sdp"
-        android:paddingLeft="@dimen/_2sdp"
-        android:paddingTop="@dimen/_2sdp"
-        android:paddingEnd="@dimen/_10sdp"
-        android:paddingRight="@dimen/_10sdp"
+        android:paddingStart="@dimen/_3sdp"
+        android:paddingLeft="@dimen/_3sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_3sdp"
+        android:paddingRight="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_10sdp"
         android:background="@drawable/bg_infowingow">
-
-        <androidx.appcompat.widget.AppCompatImageView
+        <com.printful.locations.utils.CircleImageView
             android:id="@+id/ivProfile"
             android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp" />
-
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_user"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="2dp" />
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/llMain"
+            android:layout_width="@dimen/_100sdp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_10ssp"
                 android:textStyle="bold"
-                tools:text="Jack Sparrow" />
+                tools:text="Title" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="3"
+                android:minLines="3"
                 android:textColor="@color/colorBlackLight"
-                android:textSize="@dimen/_10ssp"
-                tools:text="In Black Pearl sadsds \n dsdsd dsds ds \n dsdsd dsds dsdsd dsds Latvia" />
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold"
+                tools:text="Dummy text Dummy text Dummy text" />
         </LinearLayout>
     </LinearLayout>
 
+
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-8dp"
-        android:src="@drawable/ic_play_arrow"
-        android:tint="@color/colorAccent"
-        android:rotation="90"/>
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_minus6sdp"
+        android:rotation="90"
+        android:src="@drawable/ic_arrow_right"
+        android:tint="@color/colorPrimary" />
 </LinearLayout>
