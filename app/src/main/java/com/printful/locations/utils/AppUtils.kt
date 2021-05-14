@@ -1,5 +1,7 @@
 package com.printful.locations.utils
 
+import android.animation.AnimatorInflater
+import android.animation.ObjectAnimator
 import android.content.Context
 import android.content.Intent
 import android.location.Address
@@ -8,6 +10,7 @@ import android.net.ConnectivityManager
 import android.net.NetworkInfo
 import android.os.Handler
 import android.os.SystemClock
+import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.Interpolator
 import android.widget.Toast
@@ -22,6 +25,8 @@ var UPDATE = "update"
 var USERLIST = "userlist"
 var PARAM_EMAIL = "param_email"
 var AUTHORIZE = "AUTHORIZE"
+var ANIM_TIME_IMAGE: Long = 5000
+var ANIM_SHORT_TIME_IMAGE: Long = 2500
 
 /**show toast message**/
 fun showTast(context: Context, msg: String) {
@@ -81,6 +86,21 @@ fun animateMarker(
             }
         }
     })
+}
+
+fun animateFlip(context: Context, view: View, millisecond: Long) {
+    val animFlip =
+        AnimatorInflater.loadAnimator(context, R.animator.anim_flip) as ObjectAnimator
+
+    val handler = Handler()
+    handler.postDelayed(object : Runnable {
+        override fun run() {
+            animFlip.target = view
+            animFlip.duration = millisecond
+            animFlip.start()
+            handler.postDelayed(this, millisecond)
+        }
+    }, 0)
 }
 
 fun isNetworkConnected(context: Context): Boolean {

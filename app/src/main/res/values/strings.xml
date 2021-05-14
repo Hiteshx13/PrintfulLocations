@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Printful Locations</string>
-    <string name="map_api_key">Add your google map key here</string>
+    <string name="map_api_key">AIzaSyAvp9SJ6mZIcyxxhT2MrvhLjUrHjMGscAA</string>
     <string name="ok">OK</string>
     <string name="enter_email">Enter email</string>
     <string name="enter_valid_email">Please enter valid email</string>
